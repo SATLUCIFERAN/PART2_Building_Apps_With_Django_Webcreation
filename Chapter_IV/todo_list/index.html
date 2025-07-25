@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Interactive To-Do List</title>
+    <!-- Link to our CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="todo-container">
+        <h1>My To-Do List</h1>
+
+        <div class="input-section">
+            <!-- Input field for new tasks -->
+            <input type="text" id="newTaskInput" placeholder="Add a new task...">
+            <!-- Button to add the new task -->
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+
+        <!-- Unordered list where tasks will be displayed -->
+        <ul id="taskList">
+            <!-- Initial tasks can be added here, or dynamically by JavaScript -->
+            <li>Learn HTML <button class="remove-btn">Remove</button></li>
+            <li>Style with CSS <button class="remove-btn">Remove</button></li>
+            <li>Master JavaScript <button class="remove-btn">Remove</button></li>
+        </ul>
+    </div>
+
+    <!--
+        Link to our JavaScript file.
+        The 'defer' attribute ensures the HTML is fully loaded before the script runs,
+        preventing errors if the script tries to access elements not yet in the DOM.
+    -->
+    <script src="script.js" defer></script>
+</body>
+</html>
+
+
+
+

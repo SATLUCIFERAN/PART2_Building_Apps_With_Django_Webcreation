@@ -1,0 +1,93 @@
+
+
+################### Form #####################################
+
+<form action="/submit-inquiry/" method="POST">
+    <!-- Form elements will go here -->
+</form>
+
+<form action="/upload-avatar/" method="POST" enctype="multipart/form-data">
+    <!-- File input and other form elements will go here -->
+</form>
+
+
+################## GET #######################################
+
+<form action="/search/" method="GET">
+    <input type="text" name="query">
+    <button type="submit">Search</button>
+</form>
+<!-- When submitted, URL might look like: /search/?query=magic_wand -->
+
+
+################## POST  ######################################
+
+<form action="/place-order/" method="POST">
+    <input type="text" name="item_id">
+    <input type="number" name="quantity">
+    <button type="submit">Place Order</button>
+</form>
+
+<!-- When submitted, data is hidden in the request body -->
+
+
+################## Enctype ####################################
+
+<form action="/upload-avatar/" method="POST" enctype="multipart/form-data">
+    <input type="file" name="user_avatar">
+    <button type="submit">Upload</button>
+</form>
+
+################## INPUT  #####################################
+
+<input type="text" name="customer_name" placeholder="Enter your name">
+<input type="password" name="secret_incantation">
+<input type="checkbox" name="agree_to_terms" value="yes">
+<input type="number" name="quantity_of_potions" min="1" max="10">
+
+
+
+################## Date INPUT  ################################
+
+<label for="delivery_date">Preferred Delivery Date:</label>
+<input type="date" id="delivery_date" name="delivery_date">
+
+
+################## Time INPUT  ################################
+
+<label for="delivery_time">Preferred Delivery Time:</label>
+<input type="time" id="delivery_time" name="delivery_time">
+
+
+
+################## File INPUT  ################################
+
+<label for="product_image_upload">Upload Product Image:</label>
+<input type="file" id="product_image_upload" name="product_image" accept="image/*">
+
+
+################## Text area  #################################
+
+<textarea name="long_message" rows="5" cols="40" \
+placeholder="Write your detailed inquiry here..."></textarea>
+
+
+################## select tag & option  #######################
+
+<select name="preferred_potion">
+    <option value="healing">Healing Potion</option>
+    <option value="invisibility">Potion of Invisibility</option>
+    <option value="strength">Elixir of Strength</option>
+</select>
+
+
+################## label  #####################################
+
+<label for="username_input">Your Alchemist Name:</label>
+<input type="text" id="username_input" name="username">
+                                                                 
+
+
+################## button #####################################
+
+<button type="submit">Send My Inquiry</button>
