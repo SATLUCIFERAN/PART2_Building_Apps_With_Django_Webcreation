@@ -1,0 +1,64 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Alchemy Showcase</title>
+    <!-- Link to Bootstrap's CSS (the magical pigments and forms) via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Optional: Link to your custom CSS for overrides or unique styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>   
+
+    <!-- Example of a simple Navbar structure (add this if you don't have one) -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Alchemist App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li> 
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"\ role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tools
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Scrying Mirror</a></li>
+                            <li><a class="dropdown-item" href="#">Alchemist's Scale</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Forbidden Spells</a></li>
+                        </ul>
+                    </li>                                                            
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MODIFICATION: Added text-primary class to make heading text use our custom primary color (defined in style.css later) -->
+    <h1 class="text-primary">A Simple Heading</h1>
+    <p>This is a paragraph of text. Notice its default font and spacing.</p>
+    <!-- MODIFICATION: Added Bootstrap button classes (btn and btn-primary) -->
+    <button class="btn btn-primary">Click Me</button>
+
+    <!-- ADDITION: This entire new div element was added to clearly show custom primary background color (defined in style.css later) -->
+    <div class="bg-primary text-white p-4 mt-4 rounded-lg shadow-md">
+        <h2 class="text-xl font-bold">This Box Uses Our Custom Primary Color!</h2>
+        <p>It's a deep magical violet, thanks to our custom CSS variables.</p>
+    </div>
+
+    <!-- Bootstrap's JavaScript Bundle (the magical actions and components) via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

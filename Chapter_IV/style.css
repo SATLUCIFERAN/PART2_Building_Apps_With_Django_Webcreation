@@ -1,0 +1,87 @@
+
+/* This is a CSS comment */
+
+/* Universal selector: applies to all elements */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* A professional-looking font */
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark gray text color */
+    margin: 20px; /* Space around the entire body */
+    line-height: 1.6; /* Spacing between lines of text */
+}
+/* Element selector: targets all <h1> elements */
+h1 {
+    color: #2c3e50; /* Dark blue heading color */
+    text-align: center; /* Center the text */
+    border-bottom: 2px solid #3498db; /* Blue underline */
+    padding-bottom: 10px; /* Space below the underline */
+}
+/* Element selector: targets all <h2> elements */
+h2 {
+    color: #3498db; /* A vibrant blue */
+    margin-top: 30px; /* Space above the heading */
+}
+/* Class selector: targets elements with class="container" */
+.container {
+    max-width: 800px; /* Maximum width for content */
+    margin: 20px auto; /* Center the container horizontally */
+    background-color: #ffffff; /* White background for the content area */
+    padding: 20px 30px; /* Padding inside the container */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+/* Element selector: targets all <ul> elements */
+ul {
+    list-style-type: disc; /* Use traditional bullet points */
+    margin-left: 20px; /* Indent the list */
+}
+/* Element selector: targets all <li> elements */
+li {
+    margin-bottom: 5px; /* Space between list items */
+}
+/* Element selector: targets all <a> (link) elements */
+a {
+    color: #e74c3c; /* Red color for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make text bold */
+}
+/* Pseudo-class: changes style when mouse hovers over a link */
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #c0392b; /* Darker red on hover */
+}
+/* Element selector: targets all <img> elements */
+img {
+    max-width: 100%; /* Ensures image scales down on smaller screens */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes extra space below image */
+    margin: 20px auto; /* Center image horizontally */
+    border: 2px solid #3498db; /* Blue border */
+    border-radius: 5px; /* Rounded corners */
+}
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+    .container {
+        padding: 15px 20px;
+    }
+}
+
+
+/* Add this to style.css */
+.activated-message {
+    color: #27ae60; /* A vibrant green */
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: all 0.3s ease-in-out; /* Smooth transition for changes */
+}
+
+/* Style for disabled button */
+.disabled-button {
+    background-color: #95a5a6 !important; /* !important to override inline style if any */
+    cursor: not-allowed;
+}
+
+

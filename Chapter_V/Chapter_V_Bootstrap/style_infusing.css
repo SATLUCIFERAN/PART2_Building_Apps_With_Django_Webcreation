@@ -1,0 +1,22 @@
+/* style.css */
+
+/* Define custom CSS variables for Bootstrap's colors */
+:root {
+    --bs-primary: #8a2be2;   /* A deep magical violet */
+    --bs-secondary: #ffc107; /* A bright golden yellow */
+    --bs-info: #00bcd4;      /* A serene aqua blue */
+    --bs-success: #4CAF50;   /* A vibrant green for success */
+    --bs-warning: #ff9800;   /* A warm orange for warnings */
+    --bs-danger: #f44336;    /* A strong red for danger */
+}
+
+body {
+    background-color: #e0e0e0; /* A more noticeable light grey background */
+    font-family: 'Roboto', sans-serif; /* Using Roboto or a generic sans-serif */
+    color: #212529; /* A very dark grey/almost black for default text */
+}
+
+.card-title {
+    font-weight: bold;
+    text-transform: uppercase;
+}

@@ -1,0 +1,14 @@
+
+from django.contrib.auth.models import User
+from myapp.models import UserProfile
+
+for user in User.objects.all():
+    try:
+        _ = user.userprofile
+    except UserProfile.DoesNotExist:  # Catch the specific exception
+        UserProfile.objects.create(user=user)
+        print(f"Created UserProfile for {user.username}")
+    except Exception as e:  # Catch any other unexpected errors
+        print(f"Error processing user {user.username}: {e}")
+
+
